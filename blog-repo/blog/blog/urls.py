@@ -17,11 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
-from blog.views import IndexView
+from blog.views import indexView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', IndexView.as_view(), name="home"),
+    path('', indexView.as_view(), name="home"),
     path('', include ('apps.post.urls')),
     path('', include ('apps.user.urls')),
 ]
