@@ -1,0 +1,18 @@
+{% extends 'layout/base_layout.html' %}
+
+{% blog title_layout %}{% endblog title_layout %}
+    {%block title%}
+        Blog Infor
+    {%endblock title%}
+{% block extra_head_layout%}
+    {% block extra_head%}{% endblock extra_head%}
+{% endblock extra_head_layout%}
+
+
+{% block content_layout%}
+    <main>
+        {% block content%}
+        {% endblock content%}
+    </main>
+{% endblock content_layout%}
+
